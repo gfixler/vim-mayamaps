@@ -1,9 +1,9 @@
 " run current line
 nnoremap <leader>sm :py sendBufferToMaya ()<cr>
-xnoremap <leader>sm :py sendBufferToMaya ()<cr>
+vnoremap <leader>sm :py sendBufferToMaya ()<cr>
 " run current buffer
 nnoremap <leader>sb :py sendBufferToMaya (True)<cr>
-xnoremap <leader>sb :py sendBufferToMaya (True)<cr>
+vnoremap <leader>sb :py sendBufferToMaya (True)<cr>
 
 " make a new scene
 nnoremap <Leader>mn :<C-u>py sendBufferToMaya(userCmd='cmds.file(new=True, force=True)')<CR>
