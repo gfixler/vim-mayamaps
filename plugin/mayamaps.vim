@@ -1,6 +1,6 @@
 " undo
-nnoremap <leader>mu :py sendBufferToMaya(userCmd='mel.eval("evalDeferred undo")')<CR>
-nnoremap <leader>mU :py sendBufferToMaya(userCmd='mel.eval("evalDeferred redo")')<CR>
+nnoremap <leader>mu :py sendBufferToMaya(userCmd='cmds.evalDeferred(cmds.undo())')<CR>
+nnoremap <leader>mU :py sendBufferToMaya(userCmd='cmds.evalDeferred(cmds.redo())')<CR>
 
 " run current line
 nnoremap <leader>sm :py sendBufferToMaya ()<cr>
