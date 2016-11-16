@@ -28,5 +28,6 @@ nnoremap <Leader>m<< :<C-u>py sendBufferToMaya(userCmd='cmds.playbackOptions(min
 nnoremap <Leader>m<> :<C-u>py sendBufferToMaya(userCmd='cmds.playbackOptions(minTime=cmds.playbackOptions(query=True, minTime=True)+=v:count1<CR>)')<CR>
 nnoremap <Leader>m>< :<C-u>py sendBufferToMaya(userCmd='cmds.playbackOptions(maxTime=cmds.playbackOptions(query=True, maxTime=True)-=v:count1<CR>)')<CR>
 nnoremap <Leader>m>> :<C-u>py sendBufferToMaya(userCmd='cmds.playbackOptions(maxTime=cmds.playbackOptions(query=True, maxTime=True)+=v:count1<CR>)')<CR>
-
+nnoremap <Leader>m<<Bar> :<C-u>py sendBufferToMaya(userCmd='cmds.playbackOptions(minTime==v:count1<CR>)')<CR>
+nnoremap <Leader>m><Bar> :<C-u>py sendBufferToMaya(userCmd='cmds.playbackOptions(maxTime==v:count1<CR>)')<CR>
 
